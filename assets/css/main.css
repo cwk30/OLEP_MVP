@@ -124,6 +124,10 @@ strong, b {
   color: #3d4449;
   font-weight: 600; }
 
+#header, strong {
+  color: #f56a6a
+}
+
 em, i {
   font-style: italic; }
 
