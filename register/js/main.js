@@ -9,10 +9,18 @@ $(function(){
         transitionEffectSpeed: 500,
         titleTemplate : '<div class="title">#title#</div>',
         labels: {
-            previous : 'Back Step',
-            next : '<i class="zmdi zmdi-arrow-right"></i>',
-            finish : '<i class="zmdi zmdi-check"></i>',
+            previous : '<i class="fas fa-arrow-left"></i>',
+            next : '<i class="fas fa-arrow-right"></i>',
+            finish : '<i class="fas fa-check"></i>',
             current : ''
         },
+        onFinished: function (event, currentIndex)
+        {
+            var form = $(this);
+
+            // Submit form input
+
+            $(".form-register").submit();
+        }
     })
 });
