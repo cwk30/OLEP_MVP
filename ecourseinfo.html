@@ -1,0 +1,162 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Indicate Courses Teaching Preferences</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#msform{
+				width: 600px;
+				margin: 50px auto;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							
+							<!-- Form -->
+							<form action="form_demo.html" method="get" id="msform">
+							<!-- Server Side
+
+								<form action="http://localhost/register_edu.php" method="post">
+
+								-->
+
+								
+								<fieldset>
+								<!--Section1-->
+								<header id="header">
+									<a class="logo" onclick="hide1()"><strong>Course Information</strong></a>
+								</header>
+								<br>
+								<div class="row gtr-uniform" id="div1">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="coursename" id="coursename" value="" placeholder="Course Name" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="country" id="country" value="" placeholder="Country Taught Before" />
+									</div>									
+									<!-- Break -->
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="language" id="language" value="" placeholder="Language Taught In" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="level" id="level" value="" placeholder="Level of Difficulty: K-12, University, Training" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="period" id="period" value="" placeholder="Period of Holidays" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="classsize" id="classsize" value="" placeholder="Minimum Class Size" />
+									</div>
+									<div class="col-12">
+										<textarea name="schedule" id="schedule" placeholder="Propose a time schedule for the module" rows="6"></textarea>
+									</div>
+									<div class="col-12 col-12-xsmall">
+										<legend>Syllabus</legend>
+										<input type="file" name="syllabus" id="syllabus"/>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Submit" class="primary" /></li>
+										</ul>
+									</div>
+
+								</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li>
+											<span class="opener">Home</span>
+											<ul>
+												<li><a href="ehome.html">If you are an Educator</a></li>
+												<li><a href="ihome.html">If you are an Institution</a></li>
+												<li><a href="home.html">If you are a Student</a></li>
+												
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Profile</span>
+											<ul>
+												<li><a href="eprofile.html">If you are an Educator</a></li>
+												<li><a href="iprofile.html">If you are an Institution</a></li>
+												<li><a href="sprofile.html">If you are a Student</a></li>
+												
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Marketplace</span>
+											<ul>
+												<li><a href="marketplace.html">If you are an student</a></li>
+												<li><a href="educatorlookup.html">If you are an Institution</a></li>
+												<li><a href="institutionlookup.html">If you are an Educator</a></li>
+												
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Create Course</span><!--hidden for student-->
+											<ul>
+												<li><a href="ecourseinfo.html">If you are an Educator</a></li>
+												<li><a href="icourseinfo.html">If you are an Institution</a></li>
+											</ul>
+										</li>										
+										<li><a href="payment.html">Payment Settings</a></li> <!--hidden for student-->
+										<li><a href="message.html">Inbox</a></li> <!--hidden for student-->
+										
+									</ul>
+								</nav>
+
+						</div>
+					</div>
+					
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function hide1(){
+					var x = document.getElementById("div1");
+					if (x.style.display === "none") {
+						x.style.display = "";
+					} else {
+						x.style.display = "none";
+					}
+				}
+			</script>
+	</body>
+</html>

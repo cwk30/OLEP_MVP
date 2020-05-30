@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Register Educator</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#msform{
+				width: 600px;
+				margin: 50px auto;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							
+							<!-- Form -->
+							<form action="form_demo.html" method="get" id="msform">
+							<!-- Server Side
+
+								<form action="http://localhost/register_edu.php" method="post">
+
+								-->
+
+								
+								<fieldset>
+								<!--Section1-->
+								<header id="header">
+									<a class="logo" onclick="hide1()"><strong>Personal Information</strong></a>
+								</header>
+								<br>
+								<div class="row gtr-uniform" id="div1">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="firstname" id="firstname" value="" placeholder="First Name" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="lastname" id="lastname" value="" placeholder="Last Name" />
+									</div>									
+									<!-- Break -->
+									<div class="col-6 col-12-xsmall">
+										<input type="email" name="email" id="email" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" value="" placeholder="Email" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="phone" id="phone" value="" placeholder="Phone Number" />
+									</div>
+									<!-- Break -->
+									<div class="col-6 " >
+										<select name="gender" id="gender" >
+											<option value="">- Gender -</option>
+											<option value="1">Male</option>
+											<option value="1">Female</option>
+										</select>
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="dob" id="dob" value="" pattern="^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$" placeholder="DOB: DD/MM/YYYY" />
+									</div>
+									<!-- Break -->
+									<div class="col-12 col-12-xsmall">
+										<input type="text" name="address" id="address" value="" placeholder="Country" />
+									</div>
+								</div>
+								</fieldset>
+								<fieldset>
+								<!--Section2-->
+								<header id="header">
+									<a class="logo" onclick="hide2()"><strong>Work Experience</strong></a>
+								</header>
+								<br>
+								<div class="row gtr-uniform" id="div2">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="currentworkplace" id="currentworkplace" value="" placeholder="Current Workplace" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="positionheld" id="positionheld" value="" placeholder="Position Held" />
+									</div>
+
+									<!-- Break -->
+									<div class="col-12">
+										<textarea name="workexperience" id="workexperience" placeholder="List your working experiences" rows="6"></textarea>
+									</div>
+									<!-- Break -->
+									<div class="col-12">
+										<textarea name="awards" id="awards" placeholder="List your medals and nominations" rows="6"></textarea>
+									</div>
+									<!-- Break -->
+								</div>
+								</fieldset>	
+								<fieldset>
+								<!--Section2.5-->
+								<header id="header">
+									<a class="logo" onclick="hide2()"><strong>Profile</strong></a>
+								</header>
+								<br>
+								<div class="row gtr-uniform" id="div2">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="level" id="level" value="" placeholder="Teaching Level e.g. K-12, University" />
+									</div>
+									<!-- Break -->
+									<div class="col-12">
+										<textarea name="skills" id="skills" placeholder="List you skills, separated by commas (,)" rows="6"></textarea>
+									</div>
+									<!-- Break -->
+									<div class="col-12">
+										<textarea name="writeup" id="writeup" placeholder="Short writeup about yourself" rows="6"></textarea>
+									</div>
+
+									<!-- Break -->
+								</div>
+								</fieldset>	
+								<fieldset>
+								<!--Section3-->
+								<header id="header">
+									<a class="logo" onclick="hide3()"><strong>Payment Details</strong></a>
+								</header>
+								<br>
+								<div class="row gtr-uniform" id="div3">
+									<div class="col-6">
+										<select name="bank" id="bank">
+											<option value="">- Bank -</option>
+											<option value="1">DBS</option>
+											<option value="1">POSB</option>
+											<option value="1">Maybank</option>
+											<option value="1">OCBC</option>
+										</select>
+									</div>
+									<div class="col-6">
+										<select name="cardtype" id="cardtype">
+											<option value="">- Card Type -</option>
+											<option value="1">Debit</option>
+											<option value="1">Credit</option>
+											<option value="1">VISA</option>
+											<option value="1">Master</option>
+										</select>
+									</div>
+
+									<div class="col-12 col-12-xsmall">
+										<input type="text" name="cardname" id="cardname" value="" placeholder="Name on Card" />
+									</div>
+									<div class="col-12 col-12-xsmall">
+										<input type="text" name="cardnumber" id="cardnumber" value="" placeholder="Card Number" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="expirydate" id="expirydate" value="" placeholder="Expiry Date: MM/YY" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="cvv" id="cvv" value="" placeholder="CVV" />
+									</div>
+								</div>
+								</fieldset>
+								<fieldset>
+								<!--Section4-->
+								<header id="header">
+									<a class="logo" onclick="hide4()"><strong>Upload Important Documents</strong></a>
+								</header>
+								<br>
+								<div class="row gtr-uniform" id="div4">
+									
+									<div class="col-12 col-12-xsmall">
+										<legend>Upload your recent photo</legend>
+										<input type="file" name="uploadphoto" id="uploadphoto"/>
+									</div>
+									<div class="col-12 col-12-xsmall">
+										<legend>Upload your latest qualifications</legend>
+										<input type="file" name="uploadqualifications" id="uploadqualifications"/>
+									</div>
+									<div class="col-12 col-12-xsmall">
+										<legend>Upload a 2-min introductory video of yourself</legend>
+										<input type="file" name="uploadvideo" id="uploadvideo"/>
+									</div>
+									<div class="col-12 col-12-xsmall">
+										<legend>Other supplementary documents</legend>
+										<input type="file" name="uploaddocuments" id="uploaddocuments"/>
+									</div>
+
+									<!-- Break -->
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Submit" class="primary" /></li>
+										</ul>
+									</div>
+								</div>
+								</fieldset>
+							</form>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li>
+											<span class="opener">Home</span>
+											<ul>
+												<li><a href="ehome.html">If you are an Educator</a></li>
+												<li><a href="ihome.html">If you are an Institution</a></li>
+												<li><a href="home.html">If you are a Student</a></li>
+												
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Profile</span>
+											<ul>
+												<li><a href="eprofile.html">If you are an Educator</a></li>
+												<li><a href="iprofile.html">If you are an Institution</a></li>
+												<li><a href="sprofile.html">If you are a Student</a></li>
+												
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Marketplace</span>
+											<ul>
+												<li><a href="marketplace.html">If you are an student</a></li>
+												<li><a href="educatorlookup.html">If you are an Institution</a></li>
+												<li><a href="institutionlookup.html">If you are an Educator</a></li>
+												
+											</ul>
+										</li>
+										<li>
+											<span class="opener">Create Course</span><!--hidden for student-->
+											<ul>
+												<li><a href="ecourseinfo.html">If you are an Educator</a></li>
+												<li><a href="icourseinfo.html">If you are an Institution</a></li>
+											</ul>
+										</li>										
+										<li><a href="payment.html">Payment Settings</a></li> <!--hidden for student-->
+										<li><a href="message.html">Inbox</a></li> <!--hidden for student-->
+										
+									</ul>
+								</nav>
+
+						</div>
+					</div>
+					
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script>
+				function hide1(){
+					var x = document.getElementById("div1");
+					if (x.style.display === "none") {
+						x.style.display = "";
+					} else {
+						x.style.display = "none";
+					}
+				}
+				function hide2(){
+					var x = document.getElementById("div2");
+					if (x.style.display === "none") {
+						x.style.display = "";
+					} else {
+						x.style.display = "none";
+					}
+				}
+				function hide3(){
+					var x = document.getElementById("div3");
+					if (x.style.display === "none") {
+						x.style.display = "";
+					} else {
+						x.style.display = "none";
+					}
+				}
+				function hide4(){
+					var x = document.getElementById("div4");
+					if (x.style.display === "none") {
+						x.style.display = "";
+					} else {
+						x.style.display = "none";
+					}
+				}
+			</script>
+	</body>
+</html>
