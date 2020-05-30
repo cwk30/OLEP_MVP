@@ -6,10 +6,16 @@
 -->
 <html>
 	<head>
-		<title>OLEP</title>
+		<title>Indicate Courses Teaching Preferences</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			#msform{
+				width: 600px;
+				margin: 50px auto;
+			}
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -19,134 +25,58 @@
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
+							
+							<!-- Form -->
+							<form action="form_demo.html" method="get" id="msform">
+							<!-- Server Side
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>OLEP</strong></a>
-									<ul class="icons">
-										<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-										<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-									</ul>
-								</header>
+								<form action="http://localhost/register_edu.php" method="post">
 
-							<!-- Banner -->
-								<section id="banner">
-									<div class="content">
-										<header>
-											<h1>Hi, << name >> </h1>
-											<p>Ready to teach?</p>
-										</header>
-										
-										
-									<h2>Quick links</h2>
-									<p>The profile page should load the correct "mode" automatically based on account type. For demo purpose:</p>
-									<p><a href="home.html">Switch to Student's mode</a></p>
-									<p><a href="ihome.html">Switch to Institution's mode</a></p>
-									</div>
-									<span class="image object">
-										<img src="images/pic10.jpg" alt="" />
-									</span>
-								</section>
+								-->
 
-							<!-- Section -->
-								<section>
 								
-									<header class="major">
-										<h2>Erat lacinia</h2>
-									</header>
-									<div class="features">
-										<article>
-											<span class="icon fa-gem"></span>
-											<div class="content">
-												<h3>Portitor ullamcorper</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-paper-plane"></span>
-											<div class="content">
-												<h3>Sapien veroeros</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-rocket"></span>
-											<div class="content">
-												<h3>Quam lorem ipsum</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											</div>
-										</article>
-										<article>
-											<span class="icon solid fa-signal"></span>
-											<div class="content">
-												<h3>Sed magna finibus</h3>
-												<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											</div>
-										</article>
+								<fieldset>
+								<!--Section1-->
+								<header id="header">
+									<a class="logo" onclick="hide1()"><strong>Course Information</strong></a>
+								</header>
+								<br>
+								<div class="row gtr-uniform" id="div1">
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="coursename" id="coursename" value="" placeholder="Course Name" />
 									</div>
-								</section>
-
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Ipsum sed dolor</h2>
-									</header>
-									<div class="posts">
-										<article>
-											<a href="#" class="image"><img src="images/pic01.jpg" alt="" /></a>
-											<h3>Interdum aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic02.jpg" alt="" /></a>
-											<h3>Nulla amet dolore</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic03.jpg" alt="" /></a>
-											<h3>Tempus ullamcorper</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic04.jpg" alt="" /></a>
-											<h3>Sed etiam facilis</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic05.jpg" alt="" /></a>
-											<h3>Feugiat lorem aenean</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="images/pic06.jpg" alt="" /></a>
-											<h3>Amet varius aliquam</h3>
-											<p>Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="country" id="country" value="" placeholder="Country Taught Before" />
+									</div>									
+									<!-- Break -->
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="language" id="language" value="" placeholder="Language Taught In" />
 									</div>
-								</section>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="level" id="level" value="" placeholder="Level of Difficulty: K-12, University, Training" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="period" id="period" value="" placeholder="Period of Holidays" />
+									</div>
+									<div class="col-6 col-12-xsmall">
+										<input type="text" name="classsize" id="classsize" value="" placeholder="Minimum Class Size" />
+									</div>
+									<div class="col-12">
+										<textarea name="schedule" id="schedule" placeholder="Propose a time schedule for the module" rows="6"></textarea>
+									</div>
+									<div class="col-12 col-12-xsmall">
+										<legend>Syllabus</legend>
+										<input type="file" name="syllabus" id="syllabus"/>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Submit" class="primary" /></li>
+										</ul>
+									</div>
 
+								</div>
+								</fieldset>
+							</form>
 						</div>
 					</div>
 
@@ -173,8 +103,8 @@
 									<li>
 										<span class="opener">Register</span>
 										<ul>
-											<li><a href="C:\Users\wangj\OneDrive\Documents\Python Scripts\OLEP_MVP\register\edu.html">Educator</a></li>
-											<li><a href="C:\Users\wangj\OneDrive\Documents\Python Scripts\OLEP_MVP\register\insti.html">Institution</a></li>
+											<li><a href="#">Educator</a></li>
+											<li><a href="#">Institution</a></li>
 											<li><a href="#">Tempus Magna</a></li>
 											<li><a href="#">Feugiat Veroeros</a></li>
 										</ul>
@@ -240,7 +170,7 @@
 
 						</div>
 					</div>
-
+					
 			</div>
 
 		<!-- Scripts -->
@@ -249,6 +179,15 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script>
+				function hide1(){
+					var x = document.getElementById("div1");
+					if (x.style.display === "none") {
+						x.style.display = "";
+					} else {
+						x.style.display = "none";
+					}
+				}
+			</script>
 	</body>
 </html>
