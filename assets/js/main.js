@@ -260,3 +260,14 @@
 			});
 
 })(jQuery);
+
+
+//custome scripts
+function hide(div) {
+	var x = document.getElementById("div1");
+	if (x.style.display === "none") {
+		x.style.display = "";
+	} else {
+		x.style.display = "none";
+	}
+}
