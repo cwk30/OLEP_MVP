@@ -5,234 +5,306 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Marketplace</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link rel="stylesheet" href="assets/css/main.css" />
-        
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <style>
-            /* Style the input field */
-            #myInput {
-              padding: 20px;
-              margin-top: -6px;
-              border: 0;
-              border-radius: 0;
-              background: #f1f1f1;
-            }
-        </style>
-        <script>
-            $(document).ready(function(){
-            $("#myInput").on("keyup", function() {
-              var value = $(this).val().toLowerCase();
-              $(".dropdown-menu li").filter(function() {
-                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-              });
-            });
-          });
-        </script>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>Marketplace</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+		/* Style the input field */
+		#myInput {
+			padding: 20px;
+			margin-top: -6px;
+			border: 0;
+			border-radius: 0;
+			background: #f1f1f1;
+		}
+	</style>
+	<script>
+		$(document).ready(function () {
+			$("#myInput").on("keyup", function () {
+				var value = $(this).val().toLowerCase();
+				$(".dropdown-menu li").filter(function () {
+					$(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+				});
+			});
+		});
+	</script>
+</head>
 
-							<!-- Header -->
-								<header id="header">
-                                    <a href="index.html" class="logo"><strong>Marketplace</strong></a>
-                                    
-									<ul class="icons">
-										<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-										<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
-									</ul>
-                                </header>
-                                <p><br></p>
-                             <!--section-->
-                            <div class="row gtr-uniform">
-                                <div class="col-2">
-                                    <div class="dropdown">
-                                        <button class="button" type="button" data-toggle="dropdown">Country
-                                        <span class="caret"></span></button>
-                                        <ul class="dropdown-menu">
-                                            <input class="form-control" id="myInput" type="text" placeholder="Search..">
-                                            <li><p><br>Popular Countries</p></li>
-                                            <li><a href="#">United States</a></li>
-                                            <li><a href="#">United Kingdom</a></li>
-                                            <li><a href="#">Canada</a></li>
-                                            <li><a href="#">Australia</a></li>
-                                            <li><a href="#">China</a></li>
-                                            <li><a href="#">India</a></li>
-                                            <li><a href="#">Japan</a></li>
-                                            <li><a href="#">Korea</a></li>
-                                            <li><a href="#">Singapore</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="col-8 col-12-xsmall">
-                                    <input type="text" name="demo-name" id="demo-name" value="" placeholder="Instituition"/>
-                                </div>
-                                <div class="col-1">
-                                    <ul class="actions">
-                                        <li><a href="#" class="button primary icon solid fa-search"></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
+<body class="is-preload">
 
-							<!-- Content -->
-								<section>
-									<header class="main">
-										<h2>Results</h2>
-									</header>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-									<section>
-										<header class="major">
-											<h4>Institutions</h4>
-										</header>
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
 
-										<section id="banner">
-											<div class="content">
-												<header>
-													<p><span class="image left"><img src="images/NUS.jpg" alt="" height="50" width="auto"/></span></p>
-													<ul class="actions">
-														<li><h1><a href="#" class= "Instituition" >National University of Singapore (NUS)</a></h1></li>
-													</ul>
-													<small><cite title="Singapore, Singapore">Singapore, Singapore<i class="glyphicon glyphicon-map-marker">
-													</i></cite></small>
-													<p><br>The National University of Singapore aspires to be a vital community of academics, researchers, staff, students and alumni working together in a spirit of innovation and enterprise for a better world. Our singular focus on talent will be the cornerstone of a truly great university that is dedicated to quality education, influential research and visionary enterprise, in service of country and society.</p>
-												</header>
-											</div>
-										</section>
-										<hr class="major" />
-										<section id="banner">
-											<div class="content">
-												<header>
-													<p><span class="image left"><img src="images/NTU.jpg" alt="" height="50" width="auto"/></span></p>
-													<ul class="actions">
-														<li><h1><a href="#" class= "Instituition" >Nanyang Technological University (NTU)</a></h1></li>
-													</ul>
-													<small><cite title="Singapore, Singapore">Singapore, Singapore<i class="glyphicon glyphicon-map-marker">
-													</i></cite></small>
-													<p><br>A research-intensive public university, Nanyang Technological University, Singapore (NTU Singapore) has 33,000 undergraduate and postgraduate students in the colleges of Engineering, Business, Science, and Humanities, Arts and Social Sciences, and its Graduate College. NTU’s Lee Kong Chian School of Medicine was established jointly with Imperial College London.</p>
-                                        			<p><br>NTU’s campus is frequently listed among the Top 15 most beautiful university campuses in the world. It has 57 Green Mark-certified (equivalent to LEED-certified) building projects comprising more than 230 buildings, of which 95% are certified Green Mark Platinum.</p>
-                                        			<p><br>In higher education, NTU is driving new pedagogies so that millennials can learn more effectively in this digital age. Part of NTU's education strategy is the flipped classroom model of learning. The centrepiece of this new way of learning is The Hive, a groundbreaking learning facility that has been described by CNN as having redefined the traditional classroom.</p>
-                                        		</header>
-											</div>
-										</section>
-										<hr class="major" />
-										<section id="banner">
-											<div class="content">
-												<header>
-													<p><span class="image left"><img src="images/SMU.jpg" alt="" height="50" width="auto"/></span></p>
-													<ul class="actions">
-														<li><h1><a href="#" class= "Instituition" >Singapore Management Univeristy (SMU)</a></h1></li>
-													</ul>
-													<small><cite title="Singapore, Singapore">Singapore, Singapore<i class="glyphicon glyphicon-map-marker">
-													</i></cite></small>
-													<p><br>A premier university in Asia, the Singapore Management University (SMU) is internationally recognised for its world-class research and distinguished teaching. Established in 2000, SMU’s mission is to generate leading-edge research with global impact and produce broad-based, creative and entrepreneurial leaders for the knowledge-based economy.</p>
-                                        			<p><br>SMU has an emphasis on generating rigorous, high-impact, and relevant multi-disciplinary research that addresses Asian issues of global relevance, SMU faculty collaborate with leading international researchers and universities from USA, Europe, China and India as well as with partners in the business community and public sector, through its research institutes, centres and labs.</p>
-                                        			<p><br>SMU’s city campus is a state-of-the-art facility located in the heart of downtown Singapore, fostering strategic linkages with business, government and the wider community.</p>
-                                    			</header>
-											</div>
-										</section>
-										<hr class="major" />
-										<section id="banner">
-											<div class="content">
-												<header>
-													<p><span class="image left"><img src="images/SUTD.jpg" alt="" height="50" width="auto"/></span></p>
-													<ul class="actions">
-														<li><h1><a href="#" class= "Instituition" >Singapore University of Technology (SUTD)</a></h1></li>
-													</ul>
-													<small><cite title="Singapore, Singapore">Singapore, Singapore<i class="glyphicon glyphicon-map-marker">
-													</i></cite></small>
-													<p><br>SUTD is established to advance knowledge and nurture technically grounded leaders and innovators to serve societal needs.</p>
-                                       				<p><br>We have set aside a multi-million dollar budget to spearhead our next phase of growth in three key economic sectors (Aviation, Cities, and Healthcare) supported by capabilities in Artificial Intelligence/Data Science. We will work with industry to develop a suite of integrated, multi-disciplinary programmes to enhance SUTD’s education and research offerings, to prepare our graduates for the future economy, and to support national growth priorities.</p>
-                                       			</header>
-											</div>
-										</section>
-									</section>
-								</section>
-							</div>
-						</div>
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo"><strong>Marketplace</strong></a>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-
-							<!-- Search -->
-								<section id="search" class="alt">
-									<form method="post" action="#">
-										<input type="text" name="query" id="query" placeholder="Search" />
-									</form>
-								</section>
-
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li>
-											<span class="opener">Home</span>
-											<ul>
-												<li><a href="ehome.html">If you are an Educator</a></li>
-												<li><a href="ihome.html">If you are an Institution</a></li>
-												<li><a href="home.html">If you are a Student</a></li>
-												
-											</ul>
-										</li>
-										<li>
-											<span class="opener">Profile</span>
-											<ul>
-												<li><a href="eprofile.html">If you are an Educator</a></li>
-												<li><a href="iprofile.html">If you are an Institution</a></li>
-												<li><a href="sprofile.html">If you are a Student</a></li>
-												
-											</ul>
-										</li>
-										<li>
-											<span class="opener">Marketplace</span>
-											<ul>
-												<li><a href="marketplace.html">If you are an student</a></li>
-												<li><a href="educatorlookup.html">If you are an Institution</a></li>
-												<li><a href="institutionlookup.html">If you are an Educator</a></li>
-												
-											</ul>
-										</li>
-										<li>
-											<span class="opener">Create Course</span><!--hidden for student-->
-											<ul>
-												<li><a href="ecourseinfo.html">If you are an Educator</a></li>
-												<li><a href="icourseinfo.html">If you are an Institution</a></li>
-											</ul>
-										</li>										
-										<li><a href="payment.html">Payment Settings</a></li> <!--hidden for student-->
-										<li><a href="message.html">Inbox</a></li> <!--hidden for student-->
-										
-									</ul>
-								</nav>
-
+					<ul class="icons">
+						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a>
+						</li>
+						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a>
+						</li>
+						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a>
+						</li>
+						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</header>
+				<p><br></p>
+				<!--section-->
+				<div class="row gtr-uniform">
+					<div class="col-2">
+						<div class="dropdown">
+							<button class="button" type="button" data-toggle="dropdown">Country
+								<span class="caret"></span></button>
+							<ul class="dropdown-menu">
+								<input class="form-control" id="myInput" type="text" placeholder="Search..">
+								<li>
+									<p><br>Popular Countries</p>
+								</li>
+								<li><a href="#">United States</a></li>
+								<li><a href="#">United Kingdom</a></li>
+								<li><a href="#">Canada</a></li>
+								<li><a href="#">Australia</a></li>
+								<li><a href="#">China</a></li>
+								<li><a href="#">India</a></li>
+								<li><a href="#">Japan</a></li>
+								<li><a href="#">Korea</a></li>
+								<li><a href="#">Singapore</a></li>
+							</ul>
 						</div>
 					</div>
+					<div class="col-8 col-12-xsmall">
+						<input type="text" name="demo-name" id="demo-name" value="" placeholder="Instituition" />
+					</div>
+					<div class="col-1">
+						<ul class="actions">
+							<li><a href="#" class="button primary icon solid fa-search"></a></li>
+						</ul>
+					</div>
+				</div>
+
+
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h2>Results</h2>
+					</header>
+
+					<section>
+						<header class="major">
+							<h4>Institutions</h4>
+						</header>
+
+						<section id="banner">
+							<div class="content">
+								<header>
+									<p><span class="image left"><img src="images/NUS.jpg" alt="" height="50"
+												width="auto" /></span></p>
+									<ul class="actions">
+										<li>
+											<h1><a href="#" class="Instituition">National University of Singapore
+													(NUS)</a></h1>
+										</li>
+									</ul>
+									<small><cite title="Singapore, Singapore">Singapore, Singapore<i
+												class="glyphicon glyphicon-map-marker">
+											</i></cite></small>
+									<p><br>The National University of Singapore aspires to be a vital community of
+										academics, researchers, staff, students and alumni working together in a spirit
+										of innovation and enterprise for a better world. Our singular focus on talent
+										will be the cornerstone of a truly great university that is dedicated to quality
+										education, influential research and visionary enterprise, in service of country
+										and society.</p>
+								</header>
+							</div>
+						</section>
+						<hr class="major" />
+						<section id="banner">
+							<div class="content">
+								<header>
+									<p><span class="image left"><img src="images/NTU.jpg" alt="" height="50"
+												width="auto" /></span></p>
+									<ul class="actions">
+										<li>
+											<h1><a href="#" class="Instituition">Nanyang Technological University
+													(NTU)</a></h1>
+										</li>
+									</ul>
+									<small><cite title="Singapore, Singapore">Singapore, Singapore<i
+												class="glyphicon glyphicon-map-marker">
+											</i></cite></small>
+									<p><br>A research-intensive public university, Nanyang Technological University,
+										Singapore (NTU Singapore) has 33,000 undergraduate and postgraduate students in
+										the colleges of Engineering, Business, Science, and Humanities, Arts and Social
+										Sciences, and its Graduate College. NTU’s Lee Kong Chian School of Medicine was
+										established jointly with Imperial College London.</p>
+									<p><br>NTU’s campus is frequently listed among the Top 15 most beautiful university
+										campuses in the world. It has 57 Green Mark-certified (equivalent to
+										LEED-certified) building projects comprising more than 230 buildings, of which
+										95% are certified Green Mark Platinum.</p>
+									<p><br>In higher education, NTU is driving new pedagogies so that millennials can
+										learn more effectively in this digital age. Part of NTU's education strategy is
+										the flipped classroom model of learning. The centrepiece of this new way of
+										learning is The Hive, a groundbreaking learning facility that has been described
+										by CNN as having redefined the traditional classroom.</p>
+								</header>
+							</div>
+						</section>
+						<hr class="major" />
+						<section id="banner">
+							<div class="content">
+								<header>
+									<p><span class="image left"><img src="images/SMU.jpg" alt="" height="50"
+												width="auto" /></span></p>
+									<ul class="actions">
+										<li>
+											<h1><a href="#" class="Instituition">Singapore Management Univeristy
+													(SMU)</a></h1>
+										</li>
+									</ul>
+									<small><cite title="Singapore, Singapore">Singapore, Singapore<i
+												class="glyphicon glyphicon-map-marker">
+											</i></cite></small>
+									<p><br>A premier university in Asia, the Singapore Management University (SMU) is
+										internationally recognised for its world-class research and distinguished
+										teaching. Established in 2000, SMU’s mission is to generate leading-edge
+										research with global impact and produce broad-based, creative and
+										entrepreneurial leaders for the knowledge-based economy.</p>
+									<p><br>SMU has an emphasis on generating rigorous, high-impact, and relevant
+										multi-disciplinary research that addresses Asian issues of global relevance, SMU
+										faculty collaborate with leading international researchers and universities from
+										USA, Europe, China and India as well as with partners in the business community
+										and public sector, through its research institutes, centres and labs.</p>
+									<p><br>SMU’s city campus is a state-of-the-art facility located in the heart of
+										downtown Singapore, fostering strategic linkages with business, government and
+										the wider community.</p>
+								</header>
+							</div>
+						</section>
+						<hr class="major" />
+						<section id="banner">
+							<div class="content">
+								<header>
+									<p><span class="image left"><img src="images/SUTD.jpg" alt="" height="50"
+												width="auto" /></span></p>
+									<ul class="actions">
+										<li>
+											<h1><a href="#" class="Instituition">Singapore University of Technology
+													(SUTD)</a></h1>
+										</li>
+									</ul>
+									<small><cite title="Singapore, Singapore">Singapore, Singapore<i
+												class="glyphicon glyphicon-map-marker">
+											</i></cite></small>
+									<p><br>SUTD is established to advance knowledge and nurture technically grounded
+										leaders and innovators to serve societal needs.</p>
+									<p><br>We have set aside a multi-million dollar budget to spearhead our next phase
+										of growth in three key economic sectors (Aviation, Cities, and Healthcare)
+										supported by capabilities in Artificial Intelligence/Data Science. We will work
+										with industry to develop a suite of integrated, multi-disciplinary programmes to
+										enhance SUTD’s education and research offerings, to prepare our graduates for
+										the future economy, and to support national growth priorities.</p>
+								</header>
+							</div>
+						</section>
+					</section>
+				</section>
 			</div>
+		</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
 
-	</body>
+				<!-- Search -->
+				<section id="search" class="alt">
+					<form method="post" action="#">
+						<input type="text" name="query" id="query" placeholder="Search" />
+					</form>
+				</section>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li>
+							<span class="opener">Home</span>
+							<ul>
+								<li><a href="ehome.html">If you are an Educator</a></li>
+								<li><a href="ihome.html">If you are an Institution</a></li>
+								<li><a href="home.html">If you are a Student</a></li>
+
+							</ul>
+						</li>
+						<li>
+							<span class="opener">Profile</span>
+							<ul>
+								<li><a href="eprofile.html">If you are an Educator</a></li>
+								<li><a href="iprofile.html">If you are an Institution</a></li>
+								<li><a href="sprofile.html">If you are a Student</a></li>
+
+							</ul>
+						</li>
+						<li>
+							<span class="opener">Marketplace</span>
+							<ul>
+								<li><a href="marketplace.html">If you are an student</a></li>
+								<li><a href="educatorlookup.html">If you are an Institution</a></li>
+								<li><a href="institutionlookup.html">If you are an Educator</a></li>
+
+							</ul>
+						</li>
+						<li>
+							<span class="opener">Register</span>
+							<!--hidden for registered-->
+							<ul>
+								<li><a href="eregister.html">If you are an Educator</a></li>
+								<li><a href="iregister.html">If you are an Institution</a></li>
+							</ul>
+						</li>
+						<li>
+							<span class="opener">Create Course</span>
+							<!--hidden for student-->
+							<ul>
+								<li><a href="ecourseinfo.html">If you are an Educator</a></li>
+								<li><a href="icourseinfo.html">If you are an Institution</a></li>
+							</ul>
+						</li>
+						<li><a href="payment.html">Payment Settings</a></li>
+						<!--hidden for student-->
+						<li><a href="message.html">Inbox</a></li>
+						<!--hidden for student-->
+
+					</ul>
+
+				</nav>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
 </html>
