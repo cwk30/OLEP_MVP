@@ -43,14 +43,15 @@
 					<div class="content">
 						<header>
 							<h1>Thank you for registering!</h1>
-							<p>Our team will take 14 working days to validate the registration. Do check your details
-								submitted below and use the link to edit the form. You may create a course <a
-									href="icourseinfo.html">here (for institutions)</a> or <a
-									href="ecourseinfo.html">here (for educators)</a>.</p>
+							<h5>Please give our team 14 working days to validate the course you have registered. 
+								Check your details below (as submitted) and use the following link to edit your form. 
+								Have another course in mind? Create a course 
+								 <a href="ecourseinfo.html">here (for educators)</a>.
+							</h5>
 							<!--Show the correct link based on the profile created, instead of this sentence.-->
 						</header>
-
-						<div class="col-4 col-12-medium" id="results"></div>
+						<div id="msform">
+						<fieldset class="box" id="results"><legend><b>Details of Form Submitted</b></legend></div></div>
 
 				</section>
 			</div>
@@ -139,8 +140,8 @@
 	<script>
 		const resultsList = document.getElementById('results')
 		new URLSearchParams(window.location.search).forEach((value, name) => {
-			resultsList.append(`${name}:${value}`)
-			resultsList.append(document.createElement('br'))
+			resultsList.append(`${name.toUpperCase()} : ${value}`)
+			resultsList.append(document.createElement('hr'))
 		})
 	</script>
 </body>

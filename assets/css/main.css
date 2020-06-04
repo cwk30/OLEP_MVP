@@ -2334,3 +2334,10 @@ button,
       float: left;
       color: #999;
     }
+
+
+    /*Custome CSS*/
+		#msform {
+			width: 600px;
+			margin: 50px auto;
+		}

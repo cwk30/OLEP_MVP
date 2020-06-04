@@ -11,12 +11,6 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<style>
-		#msform {
-			width: 600px;
-			margin: 50px auto;
-		}
-	</style>
 </head>
 
 <body class="is-preload">
@@ -29,7 +23,7 @@
 			<div class="inner">
 
 				<!-- Form -->
-				<form action="form_demo.html" method="get" id="msform">
+				<form action="iform_submitted.html" method="get" id="msform">
 					<!-- Server Side
 
 								<form action="http://localhost/register_edu.php" method="post">
@@ -37,7 +31,7 @@
 								-->
 
 
-					<fieldset>
+					<fieldset class="box">
 						<!--Section1-->
 						<header id="header">
 							<a class="logo" onclick="hide('div1')"><strong>Personal Information</strong></a>
@@ -77,7 +71,7 @@
 							</div>
 						</div>
 					</fieldset>
-					<fieldset>
+					<fieldset class="box">
 						<!--Section2-->
 						<header id="header">
 							<a class="logo" onclick="hide('div2')"><strong>Institute Information</strong></a>
@@ -111,7 +105,7 @@
 							</div>
 						</div>
 					</fieldset>
-					<fieldset>
+					<fieldset class="box">
 						<!--Section3-->
 						<header id="header">
 							<a class="logo" onclick="hide('div3')"><strong>Payment Details</strong></a>
@@ -153,7 +147,7 @@
 							</div>
 						</div>
 					</fieldset>
-					<fieldset>
+					<fieldset class="box">
 						<!--Section4-->
 						<header id="header">
 							<a class="logo" onclick="hide('div4')"><strong>Upload Important Documents</strong></a>
@@ -174,13 +168,13 @@
 								<input type="file" name="uploaddocuments" id="uploaddocuments" />
 							</div>
 							<!-- Break -->
-							<div class="col-12">
-								<ul class="actions">
-									<li><input type="submit" value="Submit" class="primary" /></li>
-								</ul>
-							</div>
 						</div>
 					</fieldset>
+					<div class="col-12 row aln-center">
+						<ul class="actions">
+							<li><input type="submit" value="Submit" class="primary" /></li>
+						</ul>
+					</div>
 				</form>
 			</div>
 		</div>
