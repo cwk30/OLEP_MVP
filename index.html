@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>OLEP</title>
+		<title>Saruwat Live Education</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets_1/css/main.css" />
@@ -17,10 +17,10 @@
 
 			<!-- Header -->
 				<header id="header">
-					<h1 id="logo"><a href="index.html">OLEP</a></h1>
+					<h1 id="logo"><a href="index.html">Saruwat Live Education</a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="#">Courses</a>
+							<!--<li><a href="#">Courses</a>
 								<ul>
 									<li><a href="#">By Subjects</a>
 										<ul>
@@ -73,21 +73,67 @@
 										</ul>									
 									</li>
 								</ul>
-							</li>
-							<li><a href="home.html">Login</a></li>
-							<li><a href="emailverification.html">Sign up</a></li>
+							</li>-->
+							<li><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button></li>
+							<li><button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Signup</button></li>
 						</ul>
 					</nav>
-				</header>
+					<div id="id01" class="modal" > 
+				  
+						<form class="modal-content animate" action="/action_page.php"> 
+							<div class="imgcontainer"> 
+								<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span> 
+							</div> 
+				  
+							<div class="container"> 
+								<label><b>Email</b></label>
+								<input type="text" placeholder="Enter Email Address" name="email" required> 
+				  
+								<label><b>Password</b></label> 
+								<input type="password" placeholder="Enter Password" name="psw" required> 
+				  
+								<button type="submit">Login</button> 
+								
+							</div> 
+				  
+						</form>
+					</div>
+					<div id="id02" class="modal" > 
+				  
+						<form class="modal-content animate" action="/action_page.php"> 
+							<div class="imgcontainer"> 
+								<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span> 
+							</div> 
+				  
+							<div class="container"> 
+								<label><b>First Name</b></label>
+								<input type="text" placeholder="Enter First Name" name="fname" required> 
+								<label><b>Last Name</b></label>
+								<input type="text" placeholder="Enter Last Name" name="lname" required> 
+								<label><b>Email</b></label>
+								<input type="text" placeholder="Enter Email Address" name="email" required> 
+				  
+								<label><b>Password</b></label> 
+								<input type="password" placeholder="Enter Password" name="psw" required> 
+								<label><b>Confirm Password</b></label> 
+								<input type="password" placeholder="Enter Password Again" name="pswagain" required> 
+				  
+								<button type="submit">Login</button> 
+								
+							</div> 
+				  
+						</form>
+					</div>					
+				</header>				  
 
 
 			<!-- Banner -->
 				<section id="banner">
 					<div class="content">
 						<header>
-							<h2>OLEP</h2>
-							<h2>Bringing you the future of learning</h2> 
-							<h1> <br>Connecting Students, Educators and Learning Institutions</h1>
+							<h2>Sauwat Live Education</h2>
+							<h1><br>Experience the future of classical classroom learning today online</h1> 
+							<h1>Connecting educators, learning institutions, and students to provide classical education</h1>
 						</header>
 						<span class="image"><img src="images/pic011.jpg" alt="" /></span>
 					</div>
@@ -102,15 +148,15 @@
 							<div class="row">
 								<div class="col-4 col-12-medium">
 									<header>
-										<h2>Learning should be easy</h2>
-										<p>Distance should be no barrier to teaching</p>
+										<h2>Making education accessible</h2>
+										<p>A Global Education Ecosystem</p>
 									</header>
 								</div>
 								<div class="col-4 col-12-medium">
-									<p>A student looking to supplement his understanding of school lectures. A school looking to start online modules over the summer. A teacher looking to reach out to his students. An institution seeking to fulfil a shortage in educators. A student seeking knowledge from the most far flung corners of the world. Policy makers seeking to resume normalcy after a humanitarian crisis. A global pandemic keeping educators and students home.</p>
+									<p>Sauwat Live Education creates opportunities. Whether you’re a student looking for online modules, a teacher who wants to share your expertise, or an institution in need of educators, our platform has you covered. </p>
 								</div>
 								<div class="col-4 col-12-medium">
-									<p>OLEP holds the solution. With more than 200+ courses and over a 100 teachers, OLEP seeks to bridge this gap between schools, educators and students across the world. </p>
+									<p>With a network of passionate teachers who provide high-quality courses, Sauwat Live Education seeks to bridge the gap between schools, educators, and students, building a thriving global education ecosystem. </p>
 								</div>
 							</div>
 						</div>
@@ -124,11 +170,11 @@
 					<div class="content">
 						<header>
 							<h2>For Students</h2>
-							<p>Courses for a wide variety of subjects and grades available</p>
+							<p>Find the best courses taught by educators of your choice</p>
 						</header>
-						<p>Preparing for your next AP exam? Difficulty in understanding your school modules? Our selection of curated modules from institutions world wide offer the best education has to offer.</p>
+						<p>Are you preparing for an exam? Finding it difficult to understand schoolwork? Simply interested in learning something new? Our library contains courses curated by leading global institutions and educators. Begin your journey with us today!</p>
 						<ul class="actions">
-							<li><a href="#three" class="button">Learn More</a></li>
+							<li><a href="#three" class="button">Start Learning</a></li>
 						</ul>
 					</div>
 					<a href="#three" class="goto-next scrolly">Next</a>
@@ -139,12 +185,12 @@
 					<span class="image fit main bottom"><img src="images/pic123.jpg" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>Connecting Educators and Institutions</h2>
-							<p>Bridging the Gap</p>
+							<h2>For Educators and Institutions</h2>
+							<p>Create connections and bridge the gap</p>
 						</header>
-						<p>Looking to be employed by a prestigious educational institution? Want to fill a teaching position? Our platform connects teachers and institutions, and offers a means to conduct lessons over the internet.</p>
+						<p>Seeking a teaching position at an institution? Want to hire a teacher? We have the solution! Our platform connects global educators with institutions, providing opportunities for live online education.</p>
 						<ul class="actions">
-							<li><a href="#four" class="button">Learn More</a></li>
+							<li><a href="#four" class="button">Get Connected</a></li>
 						</ul>
 					</div>
 					<a href="#four" class="goto-next scrolly">Next</a>
@@ -154,40 +200,36 @@
 				<section id="four" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
-							<h2>Built for education in mind</h2>
-							<p>The portal features various tools to create a seamless workflow</p>
+							<h2>Learning Should Be Easy</h2>
+							<p>Built with convenience in mind, our portal features tools that create a seamless workflow. </p>
 						</header>
 						<div class="box alt">
 							<div class="row gtr-uniform">
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<span class="icon solid alt major fa-chart-area"></span>
-									<h3>Data driven</h3>
-									<p>Machine learning algorithms track and monitor student's progress and offer realtime feedback</p>
+									<h3>High-Quality Educators</h3>
+									<p>AI and machine learning enabled technologies allow us to register only qualified Educators.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<span class="icon solid alt major fa-comment"></span>
 									<h3>Live Support</h3>
-									<p>24/7 Customer Experience Experts are on hand to offer guidance anytime.</p>
+									<p>Seek assistance from our 24/7 online Customer Experience Experts.</p>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
 									<span class="icon solid alt major fa-flask"></span>
 									<h3>Modules</h3>
-									<p>Courses covering up to and beyond most standardised placement examinations available.</p>
+									<p>Undertake courses covering topics in recognised curricula and standardised placement examinations.</p>
 								</section>
-								<section class="col-4 col-6-medium col-12-xsmall">
+								<section class="col-6 col-6-medium col-12-xsmall">
 									<span class="icon solid alt major fa-paper-plane"></span>
 									<h3>Integration</h3>
 									<p>Integrate with your institution's Learning Management System, and preferred video conferencing portal easily.</p>
 								</section>
-								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-file"></span>
-									<h3>File Upload</h3>
-									<p>Built on the Google Drive API, educators enjoy up to 15GB of storage space for each module.</p>
-								</section>
-								<section class="col-4 col-6-medium col-12-xsmall">
+
+								<section class="col-6 col-6-medium col-12-xsmall">
 									<span class="icon solid alt major fa-lock"></span>
 									<h3>Security</h3>
-									<p>All data and transactions are encrypted and stored securely.</p>
+									<p>Assured safety with encrypted and securely stored data and transactions. </p>
 								</section>
 							</div>
 						</div>
@@ -239,6 +281,22 @@
 			<script src="assets_1/js/breakpoints.min.js"></script>
 			<script src="assets_1/js/util.js"></script>
 			<script src="assets_1/js/main.js"></script>
+			<script> 
+				var modal = document.getElementById('id01'); 
+				window.onclick = function(event) { 
+					if (event.target == modal) { 
+						modal.style.display = "none"; 
+					} 
+				} 
+			</script>
+			<script> 
+				var modal = document.getElementById('id02'); 
+				window.onclick = function(event) { 
+					if (event.target == modal) { 
+						modal.style.display = "none"; 
+					} 
+				} 
+			</script>
 
 	</body>
 </html>
