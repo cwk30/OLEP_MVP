@@ -2280,7 +2280,8 @@ input, select, textarea {
     
     /*style the model content box*/ 
     .modal-content { 
-        background-color: #fefefe; 
+		background-color: #fefefe; 
+		color: black;
         margin: 5% auto 15% auto; 
         border: 1px solid #888; 
         width: 80%; 
