@@ -32,7 +32,7 @@
 
 
 					<fieldset class="box">
-						<!--Section1-->
+						<!--Section1
 						<header id="header">
 							<a class="logo" onclick="hide('div1')"><strong>Personal Information</strong></a>
 						</header>
@@ -44,7 +44,7 @@
 							<div class="col-6 col-12-xsmall">
 								<input type="text" name="lastname" id="lastname" value="" placeholder="Last Name" />
 							</div>
-							<!-- Break -->
+							
 							<div class="col-6 col-12-xsmall">
 								<input type="email" name="email" id="email" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" value=""
 									placeholder="Email" />
@@ -52,7 +52,7 @@
 							<div class="col-6 col-12-xsmall">
 								<input type="text" name="phone" id="phone" value="" placeholder="Phone Number" />
 							</div>
-							<!-- Break -->
+							
 							<div class="col-6 ">
 								<select name="gender" id="gender">
 									<option value="">- Gender -</option>
@@ -65,13 +65,13 @@
 									pattern="^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$"
 									placeholder="DOB: DD/MM/YYYY" />
 							</div>
-							<!-- Break -->
+							
 							<div class="col-12 col-12-xsmall">
 								<input type="text" name="address" id="address" value="" placeholder="Address" />
 							</div>
 						</div>
 					</fieldset>
-					<fieldset class="box">
+					<fieldset class="box">-->
 						<!--Section2-->
 						<header id="header">
 							<a class="logo" onclick="hide('div2')"><strong>Institute Information</strong></a>
@@ -85,9 +85,7 @@
 							<div class="col-6 col-12-xsmall">
 								<input type="text" name="program" id="program" value="" placeholder="PHD/Masters" />
 							</div>
-							<div class="col-6 col-12-xsmall">
-								<input type="text" name="location" id="location" value="" placeholder="Location" />
-							</div>
+
 							<div class="col-6 col-12-xsmall">
 								<input type="text" name="yearfounded" id="yearfounded" value=""
 									placeholder="Year Founded" />
@@ -96,6 +94,12 @@
 								<input type="text" name="studentbody" id="studentbody" value=""
 									placeholder="Student Body" />
 							</div>
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="address" id="addressstate" value="" placeholder="State" />
+							</div>
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="address" id="address" value="" placeholder="Country" />
+							</div>	
 							<div class="col-6 ">
 								<select name="type" id="type">
 									<option value="">- Type -</option>
@@ -103,51 +107,14 @@
 									<option value="1">Public</option>
 								</select>
 							</div>
+							<div class="col-12">
+								<textarea name="writeup" id="writeup" placeholder="Profile Description. A short writeup about your institution."
+									rows="6"></textarea>
+							</div>							
 						</div>
 					</fieldset>
 					<fieldset class="box">
-						<!--Section3-->
-						<header id="header">
-							<a class="logo" onclick="hide('div3')"><strong>Payment Details</strong></a>
-						</header>
-						<br>
-						<div class="row gtr-uniform" id="div3">
-							<div class="col-6">
-								<select name="bank" id="bank">
-									<option value="">- Bank -</option>
-									<option value="1">DBS</option>
-									<option value="1">POSB</option>
-									<option value="1">Maybank</option>
-									<option value="1">OCBC</option>
-								</select>
-							</div>
-							<div class="col-6">
-								<select name="cardtype" id="cardtype">
-									<option value="">- Card Type -</option>
-									<option value="1">Debit</option>
-									<option value="1">Credit</option>
-									<option value="1">VISA</option>
-									<option value="1">Master</option>
-								</select>
-							</div>
 
-							<div class="col-12 col-12-xsmall">
-								<input type="text" name="cardname" id="cardname" value="" placeholder="Name on Card" />
-							</div>
-							<div class="col-12 col-12-xsmall">
-								<input type="text" name="cardnumber" id="cardnumber" value=""
-									placeholder="Card Number" />
-							</div>
-							<div class="col-6 col-12-xsmall">
-								<input type="text" name="expirydate" id="expirydate" value=""
-									placeholder="Expiry Date: MM/YY" />
-							</div>
-							<div class="col-6 col-12-xsmall">
-								<input type="text" name="cvv" id="cvv" value="" placeholder="CVV" />
-							</div>
-						</div>
-					</fieldset>
-					<fieldset class="box">
 						<!--Section4-->
 						<header id="header">
 							<a class="logo" onclick="hide('div4')"><strong>Upload Important Documents</strong></a>
@@ -156,7 +123,7 @@
 						<div class="row gtr-uniform" id="div4">
 
 							<div class="col-12 col-12-xsmall">
-								<legend>Upload a 2-min introductory video of yourself</legend>
+								<legend>Upload a 2-min introductory video</legend>
 								<input type="file" name="uploadvideo" id="uploadvideo" />
 							</div>
 							<div class="col-12 col-12-xsmall">
