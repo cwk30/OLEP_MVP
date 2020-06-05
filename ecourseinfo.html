@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Indicate Courses Teaching Preferences</title>
+	<title>Create a Course (Educator)</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -83,13 +83,25 @@
 								</fieldset>
 							</div>
 							<div class="col-12">
+								<textarea name="coursedesc" id="coursedesc" placeholder="Module Description"
+									rows="6"></textarea>
+							</div>
+							<div class="col-12">
 								<textarea name="weekly" id="weekly" placeholder="Proposed Weekly Schedule for Module"
 									rows="6"></textarea>
 							</div>
+							<div class="col-12">
+								<textarea name="assessment" id="assessment" placeholder="Proposed Assessment Breakdown"
+									rows="6"></textarea>
+							</div>									
 							<div class="col-12 col-12-xsmall">
 								<legend>Proposed Syllabus Content</legend>
 								<input type="file" name="syllabus" id="syllabus" />
 							</div>
+							<div class="col-12 col-12-xsmall">
+								<legend>Module Introduction Video</legend>
+								<input type="file" name="modvid" id="modvid" />
+							</div>							
 							<div class="col-12 row aln-center">
 								<ul class="actions">
 									<li><input type="submit" value="Submit for review" class="primary" /></li>
