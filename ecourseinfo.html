@@ -44,83 +44,106 @@
 									course details for review. We will get back to you in 14 working days. </p>
 							</div>
 							<div class="col-6 col-12-xsmall">
-								<input type="text" name="coursename" id="coursename" value=""
+								<input type="text" name="Course Name" id="coursename" value=""
 									placeholder="Course Name" />
 							</div>
+							<div class="col-12">
+								<textarea name="coursedesc" id="coursedesc" placeholder="Module Description"
+									rows="6"></textarea>
+							</div>
 							<div class="col-6 col-12-xsmall">
-								<input type="text" name="language" id="language" value=""
+								<input type="text" name="Language of Instruction" id="language" value=""
 									placeholder="Language of Instruction" />
 							</div>
 							<div class="col-6 col-12-xsmall">
-								<input type="text" name="country" id="country" value=""
+								<input type="text" name="Country Taught Before" id="country" value=""
 									placeholder="Country Taught Before" />
 							</div>
 							<!-- Break -->
 							<div class="col-6 col-12-xsmall">
-								<input type="text" name="level" id="level" value="" placeholder="Student Grade Level" />
+								<input type="text" name="Student Grade Level" id="level" value=""
+									placeholder="Student Grade Level" />
 							</div>
 							<div class="col-6 col-12-xsmall">
-								<input type="text" name="minclasssize" id="minclasssize" value=""
+								<input type="text" name="Minimum Class Size" id="minclasssize" value=""
 									placeholder="Minimum Class Size" />
 							</div>
 							<div class="col-6 col-12-xsmall">
-								<input type="text" name="maxclasssize" id="maxclasssize" value=""
+								<input type="text" name="Maximum Class Size" id="maxclasssize" value=""
 									placeholder="Maximum Class Size" />
-							</div>							
+							</div>
 							<div class="col-6 col-12-xsmall">
-								<input type="text" name="cost" id="cost" value=""
-									placeholder="Expected Fee" />
+								<input type="text" name="Expected Fee" id="cost" value="" placeholder="Expected Fee" />
 							</div>
 							<div class="col-12">
 								<fieldset class="box">
 									<legend>Proposed Timeframe of Module</legend>
 									<div class="row gtr-uniform">
 										<div class="col-6 col-12-xsmall">
-										<label >Start Date</label>
-										<input type="date" name="start" id="start" />
-									</div>
+											<label>Start Date</label>
+											<input type="date" name="Start Date" id="start" />
+										</div>
 										<div class="col-6 col-12-xsmall">
-										<label>End Date</label>
-										<input type="date" name="end" id="end" />
-									</div>
+											<label>End Date</label>
+											<input type="date" name="End Date" id="end" />
+										</div>
 									</div>
 								</fieldset>
 							</div>
+						</div>
+					</fieldset>
+					<fieldset class="box">
+						<!--Section1-->
+						<header id="header">
+							<a class="logo" onclick="hide('div2')"><strong>Course Proposal</strong></a>
+						</header>
+						<br>
+
+						<div class="row gtr-uniform" id="div2">
 							<div class="col-12">
-								<textarea name="coursedesc" id="coursedesc" placeholder="Module Description"
-									rows="6"></textarea>
+								<textarea name="Proposed Weekly Schedule for Module" id="weekly"
+									placeholder="Proposed Weekly Schedule for Module" rows="6"></textarea>
 							</div>
 							<div class="col-12">
-								<textarea name="weekly" id="weekly" placeholder="Proposed Weekly Schedule for Module"
-									rows="6"></textarea>
+								<textarea name="Day and time of weekly lesson" id="timetable"
+									placeholder="Day and time of weekly lesson" rows="6"></textarea>
 							</div>
 							<div class="col-12">
-								<textarea name="timetable" id="timetable" placeholder="Day and time of weekly lesson"
-									rows="6"></textarea>
-							</div>
-							<div class="col-12">
-								<textarea name="assessment" id="assessment" placeholder="Proposed Assessment Breakdown"
-									rows="6"></textarea>
-							</div>									
-							<div class="col-12 col-12-xsmall">
-								<legend>Proposed Syllabus Content</legend>
-								<input type="file" name="syllabus" id="syllabus" />
-							</div>
-							<div class="col-12 col-12-xsmall">
-								<legend>Module Thumbnail Image</legend>
-								<input type="file" name="modphoto" id="modphoto" />
-							</div>							
-							<div class="col-12 col-12-xsmall">
-								<legend>Module Introduction Video</legend>
-								<input type="file" name="modvid" id="modvid" />
-							</div>							
-							<div class="col-12 row aln-center">
-								<ul class="actions">
-									<li><input type="submit" value="Submit for review" class="primary" /></li>
-								</ul>
+								<textarea name="Proposed Assessment Breakdown" id="assessment"
+									placeholder="Proposed Assessment Breakdown" rows="6"></textarea>
 							</div>
 						</div>
 					</fieldset>
+					<fieldset class="box">
+						<!--Section1-->
+						<header id="header">
+							<a class="logo" onclick="hide('div3')"><strong>Upload Important Documents</strong></a>
+						</header>
+						<br>
+
+						<div class="row gtr-uniform" id="div3">
+							<div class="col-12 col-12-xsmall">
+								<legend>Proposed Syllabus Content</legend>
+								<input type="file" name="Proposed Syllabus Content" id="syllabus" />
+							</div>
+
+							<div class="col-12 col-12-xsmall">
+								<legend>Module Thumbnail Image</legend>
+								<input type="file" name="Module Thumbnail Image" id="modphoto" />
+							</div>
+
+							<div class="col-12 col-12-xsmall">
+								<legend>Proposed Syllabus Content</legend>
+								<input type="file" name="Module Introduction Video" id="modvid" />
+							</div>
+						</div>
+					</fieldset>
+
+					<div class="col-12 row aln-center">
+						<ul class="actions">
+							<li><input type="submit" value="Submit for review" class="primary" /></li>
+						</ul>
+					</div>
 				</form>
 			</div>
 		</div>
@@ -205,7 +228,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
-	
+
 </body>
 
 </html>
